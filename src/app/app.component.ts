@@ -58,7 +58,7 @@ export class AppComponent {
       console.log(res);
       this.bookedCab = undefined;
       this.getCurrentLocation();
-      this.bookingInfo = res;
+      this.bookingInfo = undefined;
       let amount = res.paymentInfo.finalamount;
       if (amount) {
         alert(`${amount} dogecoin's were charged for ride,plz pay for uninterrupted serives`)
